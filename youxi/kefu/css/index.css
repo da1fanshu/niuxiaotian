@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.first-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+.first-page:after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  content: '';
+}
+.head-view {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background-color: white;
+  animation: slideOutUp 1.5s;
+  -moz-animation: slideOutUp 1.5s;
+  -webkit-animation: slideOutUp 1.5s;
+  -o-animation: slideOutUp 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay:1.5s;
+  -moz-animation-delay:1.5s;
+  -webkit-animation-delay:1.5s;
+  -o-animation-delay:1.5s;
+}
+@-webkit-keyframes slideOutUp {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: -50%;
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: -50%;
+  }
+}
+.head-logo {
+  position: absolute;
+  bottom: -40px;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  animation: rotate 1.5s;
+  -moz-animation: rotate 1.5s;
+  -webkit-animation: rotate 1.5s;
+  -o-animation: rotate 1.5s;
+  animation-fill-mode：forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+.footer-view {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  background-image: url(../images/logo.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  overflow: hidden;
+  animation: slideOutDown 1.5s;
+  -moz-animation: slideOutDown 1.5s;
+  -webkit-animation: slideOutDown 1.5s;
+  -o-animation: slideOutDown 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay:1.5s;
+  -moz-animation-delay:1.5s;
+  -webkit-animation-delay:1.5s;
+  -o-animation-delay:1.5s;
+}
+@-webkit-keyframes slideOutDown {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: -50%;
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: -50%;
+  }
+}
+.footer-logo {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  animation: rotate 1.5s;
+  -moz-animation: rotate 1.5s;
+  -webkit-animation: rotate 1.5s;
+  -o-animation: rotate 1.5s;
+  animation-fill-mode：forwards;
+}
+.detail-page {
+  position: relative;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  height: 80%;
+}
+.detail-head-img {
+  width: 100%;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.detail-footer-img {
+  width: 100%;
+  margin-bottom: 65px;
+}
+.button-group {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 20px 15px;
+  background-color: #fff;
+  z-index: 998;
+}
+.goto-new {
+  float: left;
+  width: 32%;
+  font-size: 16px;
+  color: black;
+  height: 44px;
+  background-color: #007aff;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  margin-right: 2%;
+  text-decoration: none;
+}
+.download {
+  float: left;
+  width: 32%;
+  font-size: 16px;
+  color: #007aff;
+  height: 44px;
+  background-color: #e6f2ff;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 44px;
+  text-decoration: none;
+
+}
+.download-old {
+  float: left;
+  width: 32%;
+  font-size: 16px;
+  color: #007aff;
+  height: 44px;
+  background-color: #e6f2ff;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 44px;
+  margin-right: 2%;
+  text-decoration: none;
+
+}

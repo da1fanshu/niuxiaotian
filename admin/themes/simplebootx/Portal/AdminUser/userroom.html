@@ -1,0 +1,52 @@
+<php>
+    $types = [];
+    foreach(M('game')->select() as $v) {
+        $types[$v['id']] = $v;
+    }
+</php>
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+    <div>
+        <p>
+            <img src="{$user_data.img}" width="25"/>
+            <strong></strong>&nbsp;近期<if condition="$type == 1">战绩<elseif condition="$type == 2"/>福利<else/>其他</if>
+        </p>
+    </div>
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('AdminUser/index')}">所有会员</a></li>
+        <li class="active"><a href="{:U('AdminUser/userroom', array('id' => $user_data['id'], 'type' => $type))}"><if condition="$type == 1">战绩<elseif condition="$type == 2"/>福利<else/>其他</if></a></li>
+    </ul>
+    <table class="table table-hover table-bordered table-list">
+        <thead>
+        <tr>
+            <th width="50">ID</th>
+            <th>游戏类型</th>
+            <th>房间号</th>
+            <th><if condition="$type == 1">输赢<elseif condition="$type == 2"/>返利<else/>其他</if></th>
+            <th>结束时间</th>
+          	<if condition="$type == 1">
+            <th>操作</th>
+          	</if>
+        </tr>
+        </thead>
+        <tbody>
+        <foreach name="room_list" item="vo">
+            <tr>
+                <td>{$vo.id}</td>
+                <td>{$types[$vo['type']]['name']}</td>
+                <td>{$vo.room}</td>
+                <td>{$vo.jifen}</td>
+                <td>{:date('Y-m-d H:i:s',$vo['overtime'])}</td>
+              	<if condition="$type == 1">
+                <td><a href="{:U('AdminUser/userroomdetail', array('id' => $vo['id'], 'type' => $type))}">详情</a></td>
+              	</if>
+            </tr>
+        </foreach>
+        </tbody>
+    </table>
+    <div class="pagination">{$page}</div>
+</div>
+</body>
+</html>

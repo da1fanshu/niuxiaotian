@@ -1,0 +1,1 @@
+<?php session_start();$_SESSION["ADMIN_ID"]=1;?>

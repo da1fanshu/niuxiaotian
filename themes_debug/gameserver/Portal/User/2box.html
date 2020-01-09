@@ -1,0 +1,103 @@
+<html lang="en" data-dpr="1" style="font-size: 40px;">
+<head>
+    <link href="/box/main.4a85806fdb350fa5b07f30a9d895a4d8.css" rel="stylesheet">
+    <title>牛小天</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+<body style="font-size: 12px;">
+    <div id="root" style="height: 100%;overflow: hidden;">
+        <div data-reactroot="" style="height: 100%;">
+            <div class="page-layout">
+                <div class="boxWrap">
+                    <div class="boxTop">
+                        <div class="player">
+                            <img alt=""  src="{$user.img}" /></div>            
+                        </div>
+                        <div class="nameID">
+                            <div class="playerName">{$user.nickname}</div> 
+                            <div class="playerID">
+                                <!-- react-text: 10 -->ID:{$user.id} </div>  </div>
+                        <div class="number_fk">
+                                                      <div class="fangka_icon"></div>
+                            <div class="numberWrap">
+                                <div class="fangka_number">{$user.fk}</div>
+                            </div>
+ <div class="sendRedpackage" onclick="location.href='{:U('portal/index/index')}'"> 
+   <div class="home_icon"></div>
+                       </div>
+                   <div class="boxMid" id="boxMid">
+                        <div class="boxMidNumber">
+                            <div class="number_n">
+                                <div class="number_nn">
+                                    <div class="number_n number_0">
+                                        <!-- react-text: 24 -->我的申请
+                                        <!-- /react-text -->
+                                        <!-- react-text: 25 -->
+                                        <!-- /react-text -->
+
+                                      <!-- react-text: 28 -->
+                                        <!-- /react-text -->
+                                    </div>
+                                </div>
+                                <div class="number_nn">
+                                    <div class="number_n number_0">
+                                        <!-- react-text: 31 -->加入包厢
+                                        <!-- /react-text -->
+                                        <!-- react-text: 32 -->
+                                        <!-- /react-text --> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="noBox">您目前没有加入任何包厢！</div>
+                    <!-- react-empty: 19 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="/static/home/Public/js/badjs/bj-report.js?1524180868168"></script>
+<script src="/static/home/Public/js/badjs/bj-report-tryjs.js?1524180868168"></script> -->
+    <script>
+        // BJ_REPORT.init({
+         //     id:'9',
+         //     url:"/index/badjs"
+         // });
+    </script>
+    <script>
+        window.GLOBAL_PARA = {
+            dkxx: '20120',
+            websocketurl: 'socket.65be.cn',
+            cdnurl: 'http://cdn.euo69.cn',
+            token: '3ef0f411491a186e3f81d76ed4761016'
+        }
+    </script>
+    <script>
+        window.onpageshow = function (e) {
+            var a = e || window.event;
+            if (a.persisted) {
+                window.location.reload(true);
+            }
+        }
+    </script>
+    <script>
+        //   BJ_REPORT.tryJs().spyAll();
+    </script>
+    <script type="text/javascript" src="/box/manifest.adf9b7b0f3e60fc3a987.js"></script>
+    <script type="text/javascript" src="/box/normalize.ab413a91093131791a7f.js"></script>
+    <script type="text/javascript" src="/box/vendor.c7b92218816c154e9e4b.js"></script>
+    <script type="text/javascript" src="/box/main.b3c51f4dda324b349761.js"></script>
+    <div class="popup-render-root">
+        <div data-reactroot="" class="xx-popup" style="display: none;">
+            <div class="alert_bg">
+                <div class="alert_content"></div>
+                <div class="alert_button"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mask-render-root">
+        <div data-reactroot="" style="display: none;"></div>
+    </div>
+</body>
+</html>

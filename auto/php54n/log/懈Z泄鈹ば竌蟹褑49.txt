@@ -1,0 +1,5 @@
+2018-04-14 17:01:50:{"token":"7ceac29f40d892ef65d10326dfc031b5","room":"49","act":"init"}
+2018-04-14 17:01:53:{"token":"77ee4f2efb0c5f3e4d5ae26f1f08e351","room":"49","act":"init"}
+2018-04-14 17:01:56:{"token":"a171a400d171c00cc9876a06f47f7c2b","room":"49","act":"init"}
+2018-04-14 17:02:01:87{"time":1523696521667,"act":"timeyc"}
+2018-04-14 17:02:02:87{"msg":"2","id":"emoji2","act":"sendemoji"}
